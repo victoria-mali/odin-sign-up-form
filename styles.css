@@ -25,25 +25,11 @@
   margin: 0;
 }
 
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
 
 input, button, textarea, select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-
-p {
-  text-wrap: pretty;
-}
-h1, h2, h3, h4, h5, h6 {
-  text-wrap: balance;
-}
 
 .hero {
     width: 1200px;
@@ -53,15 +39,25 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
     overflow: hidden;
 }
 
+
+/* Left section */
+
 .hero-left {
     position: relative;
+    width: 1200px;
 }
 
+.hero-image {
+      max-width: 100%;
+  height: auto;
+}
+
+
 .logo {
+    padding: 10px 0;
     position: absolute;
     width: 100%;
     background: black;
@@ -72,6 +68,10 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.logo-image {
+    width: 80px;
 }
 
 .logo > p {
@@ -88,16 +88,63 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     color: white;
     left:0;
-right:0;
-margin-left:auto;
-margin-right:auto;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .hero-credit a {
     color: white;
 }
 
-.hero-image {
-    width: 100px;
+
+/* Right section */
+
+/* .hero-right {
+    padding-left: 40px;
+    padding-right: 80px;
+} */
+
+.intro {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 80px;
 }
 
+.intro span {
+    font-style: italic;
+}
+
+.intro-main {
+    margin-bottom: 20px;
+}
+
+.form-bg {
+    background-color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 80px;
+    box-shadow: 10px 5px 5px rgba(73, 73, 73, 0.15);
+}
+
+.form-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.form-button {
+    padding: 10px 40px;
+    border: none;
+    background-color: #596D48;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.form-login {
+    margin-left: 40px;
+}

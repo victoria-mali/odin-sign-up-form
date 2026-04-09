@@ -9,9 +9,9 @@
 <body>
     <section class="hero">
         <div class="hero-left">
-            <img src="images/hero-image.jpg" alt="Green leaves background image">
+            <img class="hero-image" src="images/hero-image.jpg" alt="Green leaves background image">
             <div class="logo">
-                <img class="hero-image" src="images/odin-lined.png" alt="Odin project logo">
+                <img class="logo-image" src="images/odin-lined.png" alt="Odin project logo">
                 <p>ODIN</p>
             </div>
             <p class="hero-credit">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
@@ -19,38 +19,40 @@
 
         <div class="hero-right">
             <div class="intro">
-                <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-                <p>You know you want to.</p>
+                <p class="intro-main">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span>now</span> to get started.</p>
+                <p>You <span>know</span> you want to.</p>
             </div>
             <form method="get">
-                <h2>Let's do this!</h1>
+                <div class="form-bg">
+                    <h1 class="form-title">Let's do this!</h1>
 
-                <fieldset>
-                    <label for="first-name">First name</label>
-                    <input type="text" id="first-name" name="first-name">
+                    <fieldset>
+                        <label for="first-name">First name</label>
+                        <input type="text" id="first-name" name="first-name">
 
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name">
-                </fieldset>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </fieldset>
 
-                <fieldset>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                    <fieldset>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
 
-                    <label for="phone">Phone number</label>
-                    <input type="tel" id="phone" name="phone">
-                </fieldset>
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+
+                        <label for="repeat-password">Confirm password</label>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                    </fieldset>
+                </div>
                 
-                <fieldset>
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
-
-                    <label for="repeat-password">Confirm password</label>
-                    <input type="password" id="confirm-password" name="confirm-password">
-                </fieldset>
-
-                <button type="submit">Create Account</button>
-                <div>
+                <button class="form-button" type="submit">Create Account</button>
+                <div class="form-login">
                     <p>Already have an account?</p>
                     <a href="#">Log in</a>
                 </div>
