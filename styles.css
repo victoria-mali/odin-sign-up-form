@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Norse';
-    src: url('font/Norse.woff2'woff2'),
+    src: url('font/Norse.woff2'),
         url('font/Norse.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -18,15 +18,11 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
 }
 
 *:not(dialog) {
   margin: 0;
-}
-
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
 }
 
 img, picture, video, canvas, svg {
@@ -48,3 +44,60 @@ p {
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
+
+.hero {
+    width: 1200px;
+    margin: 40px auto;
+    background-color: aliceblue;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.hero-left {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    color: white;
+    top: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > p {
+    font-family: "Norse";
+    font-weight: bold;
+    font-size: 70px;
+    opacity: 1;
+}
+
+.hero-credit {
+    font-size: 12px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    color: white;
+    left:0;
+right:0;
+margin-left:auto;
+margin-right:auto;
+}
+
+.hero-credit a {
+    color: white;
+}
+
+.hero-image {
+    width: 100px;
+}
+
